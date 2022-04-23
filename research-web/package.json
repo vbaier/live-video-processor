@@ -1,0 +1,42 @@
+{
+  "name": "django-drf-react-quickstart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "flush": "pipenv run python ./manage.py flush --no-input",
+    "test-chat": "cypress open --project ./frontend/",
+    "dev-chat": "webpack --mode development --config chat.config.js",
+    "build-chat": "webpack --mode production --config chat.config.js",
+    "dev-data": "webpack --mode development --config data.config.js",
+    "build-data": "webpack --mode production --config data.config.js",
+    "dev-all": "webpack --mode development",
+    "build-all": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "cypress": "^9.5.3",
+    "prop-types": "^15.8.1",
+    "react-hot-loader": "^4.13.0",
+    "weak-key": "^1.0.2",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  },
+  "dependencies": {
+    "gzip-js": "^0.3.2",
+    "pako": "^2.0.4",
+    "plotly.js-dist": "^2.11.1",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-webcam": "^7.0.1",
+    "zstd-codec": "^0.1.4"
+  }
+}
